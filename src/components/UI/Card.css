@@ -1,0 +1,7 @@
+.card {
+    border-radius: 12 px;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+}
+
+
+/* this will be used to replace divs as the card surrounding the elements */
