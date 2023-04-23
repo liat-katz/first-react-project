@@ -2,8 +2,12 @@ import './ExpenseItem.css';
 import Card from '../UI/Card.jsx';
 import ExpenseDate from './ExpenseDate';
 
-function ExpenseItem(props) {
+
+const ExpenseItem = (props) => {
     //the above "props" arg is one object that holds all the properties that we pass in the App.jsx file
+    const clickHandler=() => {
+        console.log("Clicked!!!!");
+    }
 
     return (
     <Card className="expense-item">
@@ -13,6 +17,8 @@ function ExpenseItem(props) {
         {/* curly braces let us either do math expressions in them or use functions, or refer to variables created beforehand */}
         <div className="expense-item__price">${props.amount}</div>
         </div>
+        <button onClick={clickHandler}>Change Item</button>
+        {/* no need for parentheses when calling this function, since we just point to the function as a value */}
     </Card>
     )
 }
